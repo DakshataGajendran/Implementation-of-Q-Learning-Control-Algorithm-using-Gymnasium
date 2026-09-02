@@ -24,7 +24,7 @@ def print_policy(policy):
 
     print("\nLearned Policy:")
     print(policy_grid)
-```
+
 
 ## Output
 
@@ -47,13 +47,11 @@ def print_policy(policy):
 <img width="957" height="521" alt="image" src="https://github.com/user-attachments/assets/d43a101a-ed8d-44e3-bad6-38c0042fb682" />
 
 
----
 
 ## Result
 
 The Q-Learning algorithm was successfully implemented on the Gymnasium `FrozenLake-v1` environment. The agent learned the optimal action-value function ($Q$) and derived a policy that successfully navigates the slippery grid world from start to goal while avoiding holes, achieving an average reward of ~0.43 over the last 1000 training episodes.
 
----
 
 ## Inference
 
@@ -61,6 +59,5 @@ The Q-Learning algorithm was successfully implemented on the Gymnasium `FrozenLa
 2. **Exploration vs. Exploitation Balance**: The exponential decay of epsilon ($\epsilon$) ensured sufficient state-space exploration early on and shifted the agent toward stable exploitation in later episodes.
 3. **Safe Policy Formulation**: The learned policy directs the agent into walls and safe boundaries near holes rather than directly toward the goal, deliberately minimizing the probability of accidentally slipping into holes.
 
----
 
 
